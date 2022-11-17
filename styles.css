@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    background-color:aqua ;
+    background-size: auto;
+}
+
+.back{
+    height: 100%;
+    background: rgb(48,213,200);
+background: linear-gradient(90deg, rgba(48,213,200,1) 0%, rgba(226,60,192,1) 38%, rgba(229,255,72,1) 84%);
+
+}
+.cipher{
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    width: 20%;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 22%;
+    background-color: rgb(206, 219, 233);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.decipher{
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    width: 20%;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(206, 219, 233);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.encryption{
+    display: flex;
+    padding-bottom: 2%;
+}
+
+.title{
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 450;
+}
+
+.btn-sec{
+    padding-top: 30px;
+}
+
+.str{
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.sub-head{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.mainhead{
+    font-size: 75px;
+    padding: 30px;
+    color: #28282b;
+    font-weight: 900;
+    font-family:'Righteous',cursive;
+    text-shadow: -2px 2px 2px white;
+}
+
+.cont{
+    width: 80%;
+    text-align: center;
+    padding: 30px;
+    font-size: 23px;
+    margin-bottom: 20px ;
+    line-height: 1.6;
+    font-style: italic;
+    font-weight: bold;
+    color: #28282b;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button{
+    padding: 5px;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+input{
+    width: 70%;
+    font-size: 20px;
+}
+
+.adv{
+    width:60%;
+    text-align:justify;
+    padding: 30px;
+    line-height: 1.5;
+    font-size: 23px;
+    color: #28282b;
+    font-style: italic;
+    font-weight: bold;
+
+}

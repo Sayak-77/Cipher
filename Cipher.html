@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CipherByte</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body>
+<script type="text/javascript">
+        var newstr=" ";
+        var temp=" ";
+        function fun1()
+        {
+            var str1=document.getElementById("string").value;
+            var str2=document.getElementById("string2").value;
+            newstr=encrypt(str1,parseInt(str2));
+        }
+        function fun2()
+        {
+            var str1=document.getElementById("string3").value;
+            var str2=document.getElementById("string4").value;
+            temp=encrypt(str1,parseInt(26-str2));
+        }
+        function mod(n, p) 
+        {
+            return n - p * Math.floor(n / p);
+        }
+        function encrypt(msg,key) 
+        {
+            var encMsg = "";
+            for (var i = 0; i < msg.length; i++) 
+            {
+                var code = msg.charCodeAt(i);
+                if (code >= 65 && code <= 65 + 26 - 1) {
+                code -= 65;
+                code = mod(code + key, 26);
+                code += 65;
+                }
+                if (code >= 97 && code <= 97 + 26 - 1) {
+                code -= 97;
+                code = mod(code + key, 26);
+                code += 97;
+                }
+                encMsg += String.fromCharCode(code);
+            }
+            return encMsg;
+        }
+        function set1()
+        {
+            var str=document.getElementById("string1");
+            str.value=newstr;
+        }
+        function set2()
+        {
+            var str=document.getElementById("string5");
+            str.value=temp;
+        }
+        </script>
+        <style>
+            html{
+                background: url(img.jpg);
+                background-repeat:none;
+                background-size: cover;
+                width: 100%;
+            }
+        </style>
+        <div class="back">
+        <center><div class="mainhead"><u>CipherByte</u></div></center>
+        <center><div class="cont">Ciphers, also called encryption algorithms, are systems for 
+            encrypting and decrypting data. A cipher converts the original message, called 
+            plaintext, into ciphertext using a key to determine how it is done.Ciphers are 
+            generally categorized according to how they work and by how their key is used for 
+            encryption and decryption. Block ciphers accumulate symbols in a message of a fixed 
+            size (the block), and stream ciphers work on a continuous stream of symbols. When a 
+            cipher uses the same key for encryption and decryption, they are known as symmetric 
+            key algorithms or ciphers. Asymmetric key algorithms or ciphers use a different key 
+            for encryption/decryption.Ciphers can be complex algorithms or simple ones. A common 
+            cipher, ROT13 (or ROT-13), is a basic letter substitution cipher, shorthand for “rotate 
+            by 13 places” in the alphabet. In a message, ROT13 replaces each letter of the alphabet 
+            with the letter that is thirteen places ahead of it.</div></center>
+        <div class="encryption">
+            <div class="cipher">
+                <div class="title">Encrypt your text: </div>
+                <br>
+                <div class="str">Enter your string:</div><input id="string" placeholder="Enter">
+                <br><br>
+                <div class="str">Enter your key:</div><input id="string2" placeholder="Enter">
+                <br>
+                <div class="btn-sec">
+                    <button onclick="fun1()" id="btn1" style="cursor: pointer;"><a>Encrypt text</a></button>
+                    <button onclick="set1()" id="btn1" style="cursor: pointer;"><a>Display Result</a></button>
+                </div>
+                <br><br>
+                <div class="sub-head">Caesar cipher result:</div><input id="string1" placeholder="Return" value="">
+            </div>
+    
+            <div class="decipher">
+                <div class="title">Decrypt your text: </div>
+                <br>
+                <div class="str">Enter your string:</div><input id="string3" placeholder="Enter"></h1>
+                <br><br>
+                <div class="str">Enter your key:</div><input id="string4" placeholder="Enter"></h1>
+                <div class="btn-sec">
+                    <button onclick="fun2()" id="btn1" style="cursor:pointer;"><a>Decrypt text</a></button>
+                    <button onclick="set2()" id="btn1" style="cursor: pointer;"><a>Display result</a></button>
+                </div>
+                <br><br>
+                <div class="sub-head">Caesar cipher result:</div><input id="string5" placeholder="Return" value=""></h1>
+            </div>
+        </div>
+        <center></centre><div class="adv">
+            <u>Advantages of ciphering your text:</u>
+            <ol>
+                <li><u>Security:</u> Encryption can help prevent data breaches during transfer and storage. If an employee loses a 
+                    company device like a phone or laptop, encrypted data may still be secure. Encrypted 
+                    communication lines can allow sensitive data to transfer without risk toward a security breach.</li>
+                <li><u>Integrity:</u> Encryption can help protect against data-manipulating attacks during transfer. Information 
+                    manipulation can change a file's contents, type and size. Data manipulators may choose to copy or delete 
+                    files during transfer. Many industries, such as social media companies, require encryption to maintain a secure standard.</li>
+                <li><u>Verification:</u> Website developers can use encryption to verify a website's data. For example, when visiting a website, the internet 
+                    browser and website server exchange encrypted information. This data exchange helps verify that the browser's connected to the real 
+                    website and not a copy. Encryption can also help stabilize an internet connection and prevent packet loss because it can ensure the 
+                    sending and receiving of the small units of data called packets.</li>
+                <li><u>Privacy:</u> Most encryption types allow only verified access to encrypted data. Encryption can help ensure that only data owners or 
+                    intended recipients read messages. This can help prevent advertisement networks, data attackers, internet service providers and 
+                    governments from reading sensitive data.</li>
+            </ol>
+        </div>
+    </center>
+    </div>
+</body>
+</html>
