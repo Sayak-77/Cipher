@@ -58,14 +58,13 @@ background: linear-gradient(90deg, rgba(48,213,200,1) 0%, rgba(226,60,192,1) 38%
     margin-bottom: 10px;
     font-style: italic;
 }
-
-.sub-head{
+.sub-head
+{
     margin-top: 20px;
     margin-bottom: 10px;
     font-size: 20px;
     font-style: italic;
 }
-
 .mainhead{
     font-size: 75px;
     padding: 30px;
@@ -74,8 +73,8 @@ background: linear-gradient(90deg, rgba(48,213,200,1) 0%, rgba(226,60,192,1) 38%
     font-family:'Righteous',cursive;
     text-shadow: -2px 2px 2px white;
 }
-
-.cont{
+.cont
+{
     width: 80%;
     text-align: center;
     padding: 30px;
@@ -87,19 +86,19 @@ background: linear-gradient(90deg, rgba(48,213,200,1) 0%, rgba(226,60,192,1) 38%
     color: #28282b;
     font-family: 'Times New Roman', Times, serif;
 }
-
 button{
     padding: 5px;
     border-radius: 5px;
     border-width: 1px;
 }
-
-input{
+input
+{
     width: 70%;
     font-size: 20px;
 }
 
-.adv{
+.adv
+{
     width:60%;
     text-align:justify;
     padding: 30px;
@@ -108,5 +107,4 @@ input{
     color: #28282b;
     font-style: italic;
     font-weight: bold;
-
 }
